@@ -4,6 +4,10 @@ const User = require("../db/users");
 
 const bcrypt = require("bcryptjs");
 
+var cors = require("cors");
+
+app.use(cors());
+
 route.get("/", (req, res) => {
   res.send(`Hi from user`);
 });
